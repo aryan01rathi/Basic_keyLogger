@@ -13,7 +13,7 @@ listener = Listener(on_press=on_press)
 listener.start()
 
 try:
-    # we didn't use join as it would have blocked the main thread preventing keyboardinterrupt  from working.
+    # we didn't use join as it would have blocked the main thread, preventing keyboardinterrupt  from working.
     while listener.running:  
         pass
 except KeyboardInterrupt:
